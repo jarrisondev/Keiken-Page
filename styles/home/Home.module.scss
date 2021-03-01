@@ -1,0 +1,46 @@
+.containerHome{
+    background-image: url('/home/home.png');
+    background-size: cover;
+    height:100vh;
+    width:100%;
+
+    .contentText{
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        
+        width: 40vw;
+        
+        .text{
+            height: 80%;
+            width: 90%;
+            
+            .h1{
+                -webkit-text-stroke: .1vw #2FCDFF;
+                color:#7FE0FF;
+                font-size: 4.5vw;
+            }
+            
+            .p{
+                font-size: 1.6vw;
+                text-align: justify;
+                width:78%;
+            }
+
+            .buttons{
+                background-color:#3E0505d8;
+                border-radius: 2vw;
+                display: flex;
+                width: max-content;
+                margin-top: 5vh;
+                transition: .9s;
+
+                &:hover{
+                    transform: translateX(20px) translatey(10px);
+                }
+            }
+        }
+
+    }
+}

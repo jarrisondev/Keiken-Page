@@ -1,0 +1,26 @@
+.button{
+    align-items: center;
+    border: none;
+    border-radius: 1.8vw;
+    cursor: pointer;
+    
+    display: flex;
+    filter: blur(2px);
+    font-size: 1.6vw;
+    font-weight: 500;
+    
+    justify-content: space-between;
+    outline: none;
+    padding: .3vw .5vw;
+
+    .img{
+        border-radius: 2vw;
+        margin-left: .8vw;
+        width:3.1vw;
+    }
+
+    &:hover{
+       filter: blur(0);
+    }
+}
+

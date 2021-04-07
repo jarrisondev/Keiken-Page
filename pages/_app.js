@@ -1,5 +1,5 @@
 import '../styles/normalize.css'
-import '../styles/globals.scss'
+import '../styles/globals.css'
 
 const MyApp = ({ Component, pageProps }) => {
   return (

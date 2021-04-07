@@ -1,18 +1,21 @@
 import Head from 'next/head'
-import Home from '../components/home/Home'
+import { Header } from '../components/Header/Header'
 
-const index = ()=>{
-    return(
-        <>
-            <Head>
-                <link rel="preconnect" href="https://fonts.gstatic.com"/>
-                <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap" rel="stylesheet"/>
-            </Head>
-            <div className="container">
-                <Home/>
-            </div>
-        </>
-    )
+const index = () => {
+  return (
+    <>
+      <Head>
+        <title>Keiken | Heladería </title>
+        <link
+          rel='shortcut icon'
+          href='/img/icon/logo.jpg'
+          type='image/x-icon'
+        />
+      </Head>
+      <div className='container'>
+        <Header />
+      </div>
+    </>
+  )
 }
-
 export default index

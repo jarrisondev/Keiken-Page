@@ -5,7 +5,7 @@ export const Header = () => {
   return (
     <HeaderStyled>
       <picture>
-        <img src='/img/icon/logo.png' alt='' />
+        <img src='/img/logo.png' alt='' />
       </picture>
       <div>
         <Button>
@@ -31,9 +31,6 @@ export const Header = () => {
       >
         <span>PEDIR AHORA</span>
       </a>
-      {/* <picture>
-          <img src='' alt='' />
-        </picture> */}
     </HeaderStyled>
   )
 }

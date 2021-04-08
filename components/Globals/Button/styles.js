@@ -7,15 +7,16 @@ export const ButtonStyled = styled.p`
   font-weight: 300;
 
   position: relative;
-  width: 8.8vw;
+  width: 8.7vw;
 
   svg {
+    margin-top: 0.1vw;
     position: absolute;
     right: 0;
     transform: rotate(0.088turn);
-    transition: all 0.7s;
 
-    width: 1.6vw;
+    transition: all 0.7s;
+    width: 1.3vw;
 
     path {
       stroke: #38606e;
@@ -28,6 +29,7 @@ export const ButtonStyled = styled.p`
     color: #64c4d6;
 
     svg {
+      margin-top: 0.3vw;
       transform: rotate(1.25turn);
 
       path {

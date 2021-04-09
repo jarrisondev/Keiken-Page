@@ -1,0 +1,31 @@
+{
+  "CARTAS_URI":[
+    {
+      "url":"/cartas/1.jfif"
+    },
+    {
+      "url":"/cartas/2.jfif"
+    },
+    {
+      "url":"/cartas/3.jfif"
+    },
+    {
+      "url":"/cartas/4.jfif"
+    },
+    {
+      "url":"/cartas/5.jfif"
+    },
+    {
+      "url":"/cartas/6.jfif"
+    },
+    {
+      "url":"/cartas/7.jfif"
+    },
+    {
+      "url":"/cartas/8.jfif"
+    },
+    {
+      "url":"/cartas/9.jfif"
+    }
+  ]
+}

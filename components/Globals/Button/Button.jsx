@@ -1,9 +1,12 @@
+import { useContext } from 'react'
 import { ButtonStyled } from './styles'
 
-export const Button = ({ event, children }) => {
+export const Button = ({ event, children, activeClass }) => {
   return (
     <>
-      <ButtonStyled onClick={event}>{children}</ButtonStyled>
+      <ButtonStyled className={activeClass} onClick={event}>
+        {children}
+      </ButtonStyled>
     </>
   )
 }

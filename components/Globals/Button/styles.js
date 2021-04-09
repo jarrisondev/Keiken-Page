@@ -34,8 +34,6 @@ export const ButtonStyled = styled.p`
 
       path {
         stroke: #64c4d6;
-        stroke-width: 0.1vw;
-        stroke-opacity: 1;
       }
     }
   }

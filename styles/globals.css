@@ -13,3 +13,22 @@ body {
 .container {
   display: flex;
 }
+
+.activeClass {
+  color: #64c4d6 !important;
+}
+.activeClass svg {
+  margin-top: 0.3vw !important;
+  transform: rotate(1.25turn) !important;
+}
+.activeClass svg path {
+  stroke: #64c4d6 !important;
+}
+.activeClass::before {
+  transform: scaleX(1) !important;
+}
+
+.effectImage {
+  transform: translateY(-100vw);
+  transition: 0.1s;
+}

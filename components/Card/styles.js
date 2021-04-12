@@ -1,41 +1,61 @@
 import styled from 'styled-components'
 
 export const CardStyled = styled.picture`
-  width: 37vw;
-  height: 100vh;
+  max-height: 100vh;
   user-select: none;
+  width: 37vw;
+  overflow: hidden;
 
-  img {
-    width: 100%;
+  .slider-container {
+    display: flex;
+    flex-direction: column;
     height: 100%;
+    width: 37vw;
+
+    img {
+      max-height: 100%;
+      width: 100%;
+    }
   }
 
   div {
-    display: flex;
-    position: fixed;
     bottom: 0;
+    display: flex;
     left: 50.999vw;
+    position: fixed;
+
     right: 50.999vw;
-    z-index: 2;
     width: 10vw;
+    z-index: 2;
 
     span {
-      background-color: #64c4d6;
+      background-color: #64c4d650;
+      cursor: pointer;
       display: flex;
+      height: 4.5vw;
+
       justify-content: center;
       width: 5vw;
-      height: 4.5vw;
-      cursor: pointer;
 
       &:hover {
-        background-color: #509aa7;
+        background-color: #64c4d6;
       }
 
       svg {
         width: 2vw;
 
         path {
-          fill: #f7e9e0;
+          fill: #f7e9e080;
+        }
+      }
+
+      &:hover {
+        svg {
+          transform: rotateY(0.5turn);
+
+          path {
+            fill: #f7e9e0;
+          }
         }
       }
     }

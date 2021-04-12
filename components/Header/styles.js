@@ -2,7 +2,8 @@ import styled from 'styled-components'
 
 export const HeaderStyled = styled.header`
   background: #f7e9e0;
-  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.668);
+  z-index: 20;
+  box-shadow: 0 3px 30px rgba(0, 0, 0, 0.668);
   display: flex;
   flex-direction: column;
 
@@ -47,14 +48,14 @@ export const HeaderStyled = styled.header`
 
     span {
       font-size: 1.7vw;
-      font-weight: 300;
+      font-weight: 600;
       position: relative;
 
       &::before {
         background-color: #38606e;
         bottom: 0;
         content: '';
-        height: 0.1rem;
+        height: 0.2rem;
 
         position: absolute;
         transition: all 0.6s;

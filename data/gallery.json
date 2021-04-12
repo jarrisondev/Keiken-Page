@@ -1,31 +1,77 @@
 {
-  "GALERIA_URL":[
+  "GALLERY_URL":[
+
     {
-      "id":"/gallery/1.jfif"
+      "id":"1",
+      "url":"/gallery/1.jfif"
     },
     {
-      "id":"/gallery/2.jfif"
+      "id":"2",
+      "url":"/gallery/2.jfif"
     },
     {
-      "id":"/gallery/3.jfif"
+      "id":"3",
+      "url":"/gallery/3.jfif"
     },
     {
-      "id":"/gallery/4.jfif"
+      "id":"4",
+      "url":"/gallery/4.jfif"
     },
     {
-      "id":"/gallery/5.jfif"
+      "id":"5",
+      "url":"/gallery/5.jfif"
     },
     {
-      "id":"/gallery/6.jfif"
+      "id":"6",
+      "url":"/gallery/6.jfif"
     },
     {
-      "id":"/gallery/7.jfif"
+      "id":"7",
+      "url":"/gallery/7.jfif"
     },
     {
-      "id":"/gallery/8.jfif"
+      "id":"8",
+      "url":"/gallery/8.jfif"
     },
     {
-      "id":"/gallery/9.jfif"
+      "id":"9",
+      "url":"/gallery/9.jfif"
+    },
+    {
+      "id":"10",
+      "url":"/gallery/10.jfif"
+    },
+    {
+      "id":"11",
+      "url":"/gallery/11.jfif"
+    },
+    {
+      "id":"12",
+      "url":"/gallery/12.jfif"
+    },
+    {
+      "id":"13",
+      "url":"/gallery/13.jfif"
+    },
+    {
+      "id":"14",
+      "url":"/gallery/14.jfif"
+    },
+    {
+      "id":"16",
+      "url":"/gallery/16.jfif"
+    },
+    {
+      "id":"17",
+      "url":"/gallery/17.jfif"
+    },
+    {
+      "id":"18",
+      "url":"/gallery/18.jfif"
+    },
+    {
+      "id":"19",
+      "url":"/gallery/19.jfif"
     }
   ]
 }

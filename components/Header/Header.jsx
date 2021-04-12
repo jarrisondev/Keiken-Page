@@ -1,10 +1,12 @@
-import { useContext, useEffect } from 'react'
+import { useContext } from 'react'
 import { Button } from '../Globals/Button/Button'
 import { HeaderStyled } from './styles'
 import { GlobalContext } from '../../context/GlobalContext'
+import { CARTAS_URI } from '../../data/cartas.json'
+import { GALLERY_URL } from '../../data/gallery.json'
 
 export const Header = () => {
-  const { optionToken, setOptionToken } = useContext(GlobalContext)
+  const { optionToken, setOptionToken, setData } = useContext(GlobalContext)
 
   let button1 = ''
   let button2 = 'activeClass'
@@ -20,8 +22,10 @@ export const Header = () => {
   //set the optionToken
   const HandleButtons = (e) => {
     if (e.target.firstChild.textContent === 'GALERÍA') {
+      setData(GALLERY_URL)
       setOptionToken(false)
     } else {
+      setData(CARTAS_URI)
       setOptionToken(true)
     }
   }

@@ -6,7 +6,9 @@ import { CARTAS_URI } from '../../data/cartas.json'
 import { GALLERY_URL } from '../../data/gallery.json'
 
 export const Header = () => {
-  const { optionToken, setOptionToken, setData } = useContext(GlobalContext)
+  const { optionToken, setOptionToken, setData, sliderContainer } = useContext(
+    GlobalContext
+  )
 
   let button1 = ''
   let button2 = 'activeClass'
@@ -21,13 +23,27 @@ export const Header = () => {
   }
   //set the optionToken
   const HandleButtons = (e) => {
-    if (e.target.firstChild.textContent === 'GALERÍA') {
-      setData(GALLERY_URL)
-      setOptionToken(false)
-    } else {
-      setData(CARTAS_URI)
-      setOptionToken(true)
+    let img = sliderContainer.current.childNodes[0]
+
+    // transition image function
+    img.style.transition = 'all .1s'
+    img.style.transform = 'scale(0)'
+
+    const transition = () => {
+      img.style.transform = 'scale(1)'
+      img.removeEventListener('transitionend', transition)
     }
+    img.addEventListener('transitionend', transition)
+
+    setTimeout(() => {
+      if (e.target.firstChild.textContent === 'GALERÍA') {
+        setData(GALLERY_URL)
+        setOptionToken(false)
+      } else {
+        setData(CARTAS_URI)
+        setOptionToken(true)
+      }
+    }, 50)
   }
 
   return (

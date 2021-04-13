@@ -95,8 +95,12 @@ export const AsideStyled = styled.aside`
     width: 80%;
 
     p {
-      font-size: 1.2vw;
+      font-size: 1.1vw;
       font-weight: 400;
+      a {
+        text-decoration: none;
+        color: #f7e9e0;
+      }
     }
 
     div {
@@ -106,8 +110,15 @@ export const AsideStyled = styled.aside`
       a {
         img {
           width: 20px;
+          transition: 0.3s;
+          transform: scale(0.9);
+
+          &:hover {
+            transform: scale(1.1);
+          }
         }
       }
+
       a:nth-of-type(1) {
         margin-right: 1.5vw;
         img {

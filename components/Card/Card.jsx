@@ -3,8 +3,7 @@ import { useContext, useRef } from 'react'
 import { GlobalContext } from '../../context/GlobalContext'
 
 export const Card = () => {
-  const { data } = useContext(GlobalContext)
-  const sliderContainer = useRef(null)
+  const { data, sliderContainer } = useContext(GlobalContext)
 
   const back = () => {
     let slider = sliderContainer.current

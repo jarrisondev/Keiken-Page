@@ -49,7 +49,11 @@ export const Aside = () => {
         </p>
       </section>
       <footer>
-        <p>2021 - Todos los derechos reservados</p>
+        <p>
+          <a href='https://github.com/jarrisoncano/Keiken-Page' target='_blank'>
+            2021 - Todos los derechos reservados
+          </a>
+        </p>
         <div className=''>
           <a
             href='https://www.google.es/maps/dir//Helader%C3%ADa+Keiken/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8e4429a5fe791331:0xbd2fdb3985ac3e50?sa=X&ved=2ahUKEwiw_ZvrwO3vAhVQFlkFHdN2CRAQ9RcwFHoECCwQBA'

@@ -28,15 +28,12 @@ const index = () => {
       <GlobalContext.Provider
         value={{ optionToken, setOptionToken, data, setData, sliderContainer }}
       >
-        {loadingToken ? (
-          <Loading />
-        ) : (
-          <div className='container'>
-            <Header />
-            <Card />
-            <Aside />
-          </div>
-        )}
+        {loadingToken && <Loading />}
+        <div className='container'>
+          <Header />
+          <Card />
+          <Aside />
+        </div>
       </GlobalContext.Provider>
     </>
   )

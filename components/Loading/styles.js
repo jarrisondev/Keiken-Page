@@ -11,7 +11,7 @@ export const LoadingStyled = styled.div`
   position: fixed;
   width: 100%;
 
-  z-index: 2;
+  z-index: 3;
 
   img {
     width: 25vw;

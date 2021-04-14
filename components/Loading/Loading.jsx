@@ -1,9 +1,7 @@
-import { LoadingStyled } from './styles'
-
 export const Loading = () => {
   return (
-    <LoadingStyled>
-      <img src='/img/logo.png' alt='' />
+    <div className='loading-container'>
+      <img src='/img/logo.png' alt='Logo de bienvenida' />
       <br />
       <div className='container-circles'>
         <div className='first-circle'></div>
@@ -11,6 +9,6 @@ export const Loading = () => {
         <div className='third-circle'></div>
         <div className='four-circle'></div>
       </div>
-    </LoadingStyled>
+    </div>
   )
 }

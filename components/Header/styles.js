@@ -38,13 +38,13 @@ export const HeaderStyled = styled.header`
     bottom: 1.3vw;
     color: #38606e;
     left: 2.2vw;
-    padding: 0.7vw 0.7vw;
 
+    padding: 0.7vw 0.7vw;
     position: absolute;
     right: 2.2vw;
     text-decoration: none;
-    text-align: center;
 
+    text-align: center;
     width: 13vw;
 
     span {
@@ -79,6 +79,20 @@ export const HeaderStyled = styled.header`
   @media (max-width: 650px) {
     height: auto;
     width: 100%;
+
+    div {
+      margin-left: 3vw;
+    }
+
+    a {
+      left: 4.4vw;
+      right: 4.4vw;
+      width: 30vw;
+
+      span {
+        font-size: 2.5vw;
+      }
+    }
   }
   @media (max-width: 450px) {
     align-items: center;

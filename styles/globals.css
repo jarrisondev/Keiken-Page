@@ -8,6 +8,8 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: black;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .container {
@@ -51,6 +53,10 @@ body {
   .activeClass svg {
     margin-top: 0.5vw !important;
     transform: rotate(1.5turn) !important;
+  }
+
+  .activeClass svg path {
+    stroke: #64c4d6 !important;
   }
 }
 

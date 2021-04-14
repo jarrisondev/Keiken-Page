@@ -55,6 +55,14 @@ export const ButtonStyled = styled.p`
   &:hover::before {
     transform: scaleX(1);
   }
+  @media (max-width: 650px) {
+    font-size: 4vw;
+    width: 20vw;
+
+    svg {
+      width: 3vw;
+    }
+  }
 
   @media (max-width: 450px) {
     font-size: 2.6vw;

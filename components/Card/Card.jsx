@@ -1,9 +1,11 @@
 import { CardStyled } from './styles'
-import { useContext } from 'react'
+import { useContext, useEffect, useRef, useState } from 'react'
 import { GlobalContext } from '../../context/GlobalContext'
 
 export const Card = () => {
   const { data, sliderContainer } = useContext(GlobalContext)
+  const [screenHeight, setScreenHeight] = useState('100vh')
+  const arrowsRef = useRef(null)
 
   const back = () => {
     let slider = sliderContainer.current
@@ -12,7 +14,7 @@ export const Card = () => {
 
     slider.insertBefore(lastImg, slider.firstChild)
     slider.style.transition = 'none'
-    slider.style.transform = 'translateY(-100vh)'
+    slider.style.transform = `translateY(-${screenHeight})`
 
     setTimeout(() => {
       slider.style.transition = 'all .6s'
@@ -25,7 +27,7 @@ export const Card = () => {
     let firstImg = sliderContainer.current.childNodes[0]
 
     slider.style.transition = 'all .6s'
-    slider.style.transform = 'translateY(-100vh)'
+    slider.style.transform = `translateY(-${screenHeight})`
 
     const transition = () => {
       slider.style.transition = 'none'
@@ -37,6 +39,20 @@ export const Card = () => {
     slider.addEventListener('transitionend', transition)
   }
 
+  useEffect(() => {
+    if (window.screen.width <= 650) {
+      if (window.screen.width > 450) {
+        setScreenHeight('85vh')
+      } else {
+        setScreenHeight('70vh')
+      }
+
+      setTimeout(() => {
+        arrowsRef.current.style.opacity = '0'
+      }, 6000)
+    }
+  }, [])
+
   return (
     <CardStyled className='card-container'>
       <span className='slider-container' ref={sliderContainer}>
@@ -44,7 +60,7 @@ export const Card = () => {
           return <img key={e.id} src={`/img${e.url}`} alt='' />
         })}
       </span>
-      <div className='arrows-container'>
+      <div ref={arrowsRef} className='arrows-container'>
         <span className='arrow 1' onClick={() => next()}>
           <svg viewBox='0 0 448 512'>
             <path d='M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z'></path>

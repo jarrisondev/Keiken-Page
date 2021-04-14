@@ -24,6 +24,7 @@ export const CardStyled = styled.picture`
     position: absolute;
 
     right: 50.999vw;
+    user-select: none;
     width: 10vw;
     z-index: 2;
 
@@ -36,10 +37,6 @@ export const CardStyled = styled.picture`
       justify-content: center;
       width: 5vw;
 
-      &:hover {
-        background-color: #64c4d6;
-      }
-
       svg {
         width: 2vw;
 
@@ -49,6 +46,8 @@ export const CardStyled = styled.picture`
       }
 
       &:hover {
+        background-color: #64c4d6;
+
         svg {
           transform: rotateY(0.5turn);
 
@@ -80,9 +79,36 @@ export const CardStyled = styled.picture`
 
   @media (max-width: 650px) {
     width: 100%;
+    position: relative;
 
     div {
-      display: none;
+      align-items: flex-end;
+      bottom: initial;
+      display: flex;
+      height: 100%;
+
+      justify-content: space-between;
+      left: initial;
+      right: initial;
+      top: 0;
+
+      width: 100%;
+      z-index: 0;
+
+      span {
+        background-color: #64c4d690;
+
+        height: 100%;
+        width: 50%;
+
+        svg {
+          width: 10vw;
+        }
+
+        &:hover {
+          background-color: #64c4d690;
+        }
+      }
     }
   }
 

@@ -160,9 +160,14 @@ export const AsideStyled = styled.aside`
       font-size: 1.8vw;
     }
 
+    .aside-section1 {
+      margin-left: 2vw;
+    }
+
     .aside-section2 {
       margin-top: 2vw;
       grid-row: 2;
+      margin: auto;
 
       h3 {
         font-size: 1.9vw;
@@ -181,6 +186,7 @@ export const AsideStyled = styled.aside`
     .aside-section3 {
       grid-column: 2;
       grid-row: 2;
+      margin: auto;
     }
 
     footer {
@@ -246,6 +252,7 @@ export const AsideStyled = styled.aside`
       grid-row: 3;
       grid-column: 1;
       margin-top: 7vw;
+      width: 100%;
     }
 
     footer {

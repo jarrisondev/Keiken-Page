@@ -10,10 +10,9 @@ export const CardStyled = styled.picture`
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 37vw;
 
     img {
-      max-height: 100%;
+      min-height: 100%;
       width: 100%;
     }
   }
@@ -22,7 +21,7 @@ export const CardStyled = styled.picture`
     bottom: 0;
     display: flex;
     left: 50.999vw;
-    position: fixed;
+    position: absolute;
 
     right: 50.999vw;
     width: 10vw;
@@ -59,5 +58,37 @@ export const CardStyled = styled.picture`
         }
       }
     }
+  }
+
+  @media (max-width: 950px) {
+    width: 42vw;
+
+    div {
+      left: 56vw;
+      right: 56vw;
+    }
+  }
+
+  @media (max-width: 750px) {
+    width: 47vw;
+
+    div {
+      left: 61vw;
+      right: 61vw;
+    }
+  }
+
+  @media (max-width: 650px) {
+    width: 100%;
+
+    div {
+      display: none;
+    }
+  }
+
+  @media (max-width: 450px) {
+    grid-row: 2;
+    height: 100%;
+    width: 100%;
   }
 `

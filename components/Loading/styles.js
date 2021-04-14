@@ -8,10 +8,10 @@ export const LoadingStyled = styled.div`
 
   height: 100vh;
   justify-content: center;
-  position: relative;
+  position: fixed;
   width: 100%;
 
-  z-index: 3;
+  z-index: 2;
 
   img {
     width: 25vw;

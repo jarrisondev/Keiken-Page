@@ -1,5 +1,5 @@
 import { CardStyled } from './styles'
-import { useContext, useRef } from 'react'
+import { useContext } from 'react'
 import { GlobalContext } from '../../context/GlobalContext'
 
 export const Card = () => {
@@ -38,7 +38,7 @@ export const Card = () => {
   }
 
   return (
-    <CardStyled>
+    <CardStyled className='card-container'>
       <span className='slider-container' ref={sliderContainer}>
         {data.map((e) => {
           return <img key={e.id} src={`/img${e.url}`} alt='' />

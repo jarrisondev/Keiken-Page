@@ -11,8 +11,8 @@ export const Card = () => {
   const back = () => {
     backArrowDelay = false
     let slider = sliderContainer.current
-    let index = sliderContainer.current.childNodes.length - 1
-    let lastImg = sliderContainer.current.childNodes[index]
+    let index = sliderContainer.current.children.length - 1
+    let lastImg = sliderContainer.current.children[index]
 
     slider.insertBefore(lastImg, slider.firstChild)
     slider.style.transition = 'none'
@@ -30,7 +30,7 @@ export const Card = () => {
 
   const next = () => {
     let slider = sliderContainer.current
-    let firstImg = sliderContainer.current.childNodes[0]
+    let firstImg = sliderContainer.current.children[0]
 
     slider.style.transition = 'all .3s'
     slider.style.transform = `translateY(-${screenHeight})`

@@ -14,18 +14,18 @@ export const Card = () => {
     let index = sliderContainer.current.children.length - 1
     let lastImg = sliderContainer.current.children[index]
 
-    slider.insertBefore(lastImg, slider.firstChild)
+    slider.insertBefore(lastImg, slider.children[0])
     slider.style.transition = 'none'
     slider.style.transform = `translateY(-${screenHeight})`
 
     setTimeout(() => {
-      slider.style.transition = 'all .3s'
+      slider.style.transition = '300ms ease-out all'
       slider.style.transform = 'translateY(0)'
 
       setTimeout(() => {
         backArrowDelay = true
-      }, 400)
-    }, 2)
+      }, 370)
+    }, 15)
   }
 
   const next = () => {

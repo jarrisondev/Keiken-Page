@@ -10,7 +10,6 @@ import { CARTAS_URI } from './data/cartas.json'
 
 function App() {
   const [data, setData] = useState(CARTAS_URI)
-  const [optionToken, setOptionToken] = useState(true)
   const [loadingToken, setLoadingToken] = useState(true)
   const sliderContainer = useRef(null)
 
@@ -22,9 +21,7 @@ function App() {
 
   return (
     <>
-      <GlobalContext.Provider
-        value={{ optionToken, setOptionToken, data, setData, sliderContainer }}
-      >
+      <GlobalContext.Provider value={{ data, setData, sliderContainer }}>
         {loadingToken && <Loading />}
         <div className='container'>
           <Header />

@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useState, useContext } from 'react'
 import { Button } from '../Globals/Button/Button'
 import { HeaderStyled } from './styles'
 import { GlobalContext } from '../../context/GlobalContext'
@@ -6,24 +6,23 @@ import { CARTAS_URI } from '../../data/cartas.json'
 import { GALLERY_URL } from '../../data/gallery.json'
 
 export const Header = () => {
-  const { optionToken, setOptionToken, setData, sliderContainer } = useContext(
-    GlobalContext
-  )
+  const [optionToken, setOptionToken] = useState(true)
+  const { setData, sliderContainer } = useContext(GlobalContext)
 
-  let button1 = ''
-  let button2 = 'activeClass'
+  let button1 = false,
+    button2 = true
 
   //add or remove the class to buttons
   if (optionToken) {
-    button1 = ''
-    button2 = 'activeClass'
+    button1 = false
+    button2 = true
   } else {
-    button1 = 'activeClass'
-    button2 = ''
+    button1 = true
+    button2 = false
   }
   //set the optionToken
   const HandleButtons = (e) => {
-    let img = sliderContainer.current.childNodes[0]
+    let img = sliderContainer.current.children[0]
 
     // transition image function
     img.style.transition = 'all .1s'

@@ -208,9 +208,6 @@ export const AsideStyled = styled.aside`
 
         a:nth-of-type(1) {
           margin-right: 2vw;
-          img {
-            width: 2.5vw;
-          }
         }
       }
     }
@@ -219,14 +216,16 @@ export const AsideStyled = styled.aside`
   @media (max-width: 450px) {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 40% 20% 20% 20%;
+    grid-template-rows: 38% 20% 33% 10%;
 
     p {
       font-size: 3.5vw;
     }
 
     .aside-section1 {
-      margin-left: 2vw;
+      margin: -1% 0 0 0;
+      position: static;
+      text-align: center;
     }
 
     .aside-section2 {
@@ -256,26 +255,27 @@ export const AsideStyled = styled.aside`
     }
 
     footer {
-      bottom: 0;
-      right: 0;
+      grid-row: 4;
+      padding: 0;
+      position: static;
       width: 100%;
 
       p {
-        font-size: 3vw;
+        font-size: 3.5vw;
       }
 
       div {
         margin-right: 2vw;
         a {
           img {
-            width: 3vw;
+            width: 4.4vw;
           }
         }
 
         a:nth-of-type(1) {
-          margin-right: 2vw;
+          margin-right: 2.8vw;
           img {
-            width: 3vw;
+            width: 5vw;
           }
         }
       }

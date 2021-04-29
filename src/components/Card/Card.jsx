@@ -24,7 +24,7 @@ export const Card = () => {
 
       setTimeout(() => {
         backArrowDelay = true
-      }, 370)
+      }, 360)
     }, 15)
   }
 
@@ -45,6 +45,7 @@ export const Card = () => {
     slider.addEventListener('transitionend', transition)
   }
 
+  //check width of screen
   useEffect(() => {
     if (window.screen.width <= 650) {
       if (window.screen.width > 450) {

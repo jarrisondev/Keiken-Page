@@ -2,39 +2,43 @@
   "CARTAS_URI":[
     {
       "id":"1",
-      "url":"/cartas/1.jfif"
+      "url":"/cartas/1.jpg"
     },
     {
       "id":"2",
-      "url":"/cartas/2.jfif"
+      "url":"/cartas/2.jpg"
     },
     {
       "id":"3",
-      "url":"/cartas/3.jfif"
+      "url":"/cartas/3.jpg"
     },
     {
       "id":"4",
-      "url":"/cartas/4.jfif"
+      "url":"/cartas/4.jpg"
     },
     {
       "id":"5",
-      "url":"/cartas/5.jfif"
+      "url":"/cartas/5.jpg"
     },
     {
       "id":"6",
-      "url":"/cartas/6.jfif"
+      "url":"/cartas/6.jpg"
     },
     {
       "id":"7",
-      "url":"/cartas/7.jfif"
+      "url":"/cartas/7.jpg"
     },
     {
       "id":"8",
-      "url":"/cartas/8.jfif"
+      "url":"/cartas/8.jpg"
     },
     {
       "id":"9",
-      "url":"/cartas/9.jfif"
+      "url":"/cartas/9.jpg"
+    },
+    {
+      "id":"10",
+      "url":"/cartas/10.jpg"
     }
   ]
 }

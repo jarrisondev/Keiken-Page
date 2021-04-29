@@ -64,7 +64,7 @@ export const Card = () => {
     <CardStyled className='card-container'>
       <span className='slider-container' ref={sliderContainer}>
         {data.map((e) => {
-          return <img key={e.id} src={`/img${e.url}`} alt='' />
+          return <img key={e.id} src={`/img${e.url}`} alt={`imagen ${e.id}`} />
         })}
       </span>
       <div ref={arrowsRef} className='arrows-container'>

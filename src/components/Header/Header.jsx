@@ -48,7 +48,7 @@ export const Header = () => {
   return (
     <HeaderStyled>
       <picture>
-        <img src='/img/logo.png' alt='' />
+        <img src='/img/logo.jpg' alt='Logo de la heladería' />
       </picture>
       <div>
         <Button activeClass={button1} event={HandleButtons}>

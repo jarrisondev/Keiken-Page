@@ -1,7 +1,7 @@
 export const Loading = () => {
   return (
     <div className='loading-container'>
-      <img src='/img/logo.png' alt='Logo de bienvenida' />
+      <img src='/img/logo.jpg' alt='Logo de bienvenida' />
       <br />
       <div className='container-circles'>
         <div className='first-circle'></div>

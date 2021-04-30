@@ -25,7 +25,7 @@ export const HeaderStyled = styled.header`
     width: 100%;
 
     img {
-      width: 90%;
+      width: 80%;
     }
   }
 
@@ -112,7 +112,7 @@ export const HeaderStyled = styled.header`
       width: 30%;
 
       img {
-        width: 65%;
+        width: 75%;
       }
     }
 

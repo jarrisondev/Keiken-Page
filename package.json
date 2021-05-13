@@ -2,10 +2,9 @@
   "name": "keiken-page",
   "version": "0.1.0",
   "private": true,
-  
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"  
+    "build": "react-scripts build"
   },
   "browserslist": {
     "production": [
@@ -24,8 +23,5 @@
     "react-dom": "17.0.2",
     "react-scripts": "4.0.3",
     "styled-components": "5.2.3"
-  },
-  "devDependencies": {
-    "babel-plugin-styled-components": "1.12.0"
   }
 }

@@ -27,6 +27,11 @@ export const AsideStyled = styled.aside`
       color: #64c4d6;
       font-weight: 700;
     }
+    a {
+      color: #64c4d6;
+      font-weight: 700;
+      text-decoration: none;
+    }
   }
 
   .aside-section2 {

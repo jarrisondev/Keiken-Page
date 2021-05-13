@@ -4,10 +4,10 @@ export const Loading = () => {
       <img src='/img/logo.jpg' alt='Logo de bienvenida' />
       <br />
       <div className='container-circles'>
-        <div className='first-circle'></div>
-        <div className='second-circle'></div>
-        <div className='third-circle'></div>
-        <div className='four-circle'></div>
+        <div className='first-circle' />
+        <div className='second-circle' />
+        <div className='third-circle' />
+        <div className='four-circle' />
       </div>
     </div>
   )

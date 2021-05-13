@@ -5,8 +5,11 @@ export const Aside = () => {
     <AsideStyled>
       <section className='aside-section1'>
         <p>
-          "Hola!! te damos la bienvenidad a <span>@keiken_heladeria</span>,
-          Esperamos que estés muy bien, somos una heladería que quiere brindar
+          "Hola!! te damos la bienvenidad a{' '}
+          <a href='https://www.instagram.com/keiken_heladeria/'>
+            @keiken_heladeria
+          </a>
+          , Esperamos que estés muy bien, somos una heladería que quiere brindar
           experiencias y productos llenos de <span>amor</span>. Tenemos toda una
           barra de frutas y toppings dulces para que crees el mejor helado del
           mundo, tenemos helado suave de yogurt, café y unos espectaculares
@@ -50,18 +53,18 @@ export const Aside = () => {
       </section>
       <footer>
         <p>
-          <a href='https://github.com/jarrisoncano/Keiken-Page' target='_blank'>
+          <a href='https://github.com/jarrisoncano/Keiken-Page' target='_blank' rel='noreferrer'>
             2021 - Todos los derechos reservados
           </a>
         </p>
         <div className=''>
           <a
             href='https://www.google.es/maps/dir//Helader%C3%ADa+Keiken/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8e4429a5fe791331:0xbd2fdb3985ac3e50?sa=X&ved=2ahUKEwiw_ZvrwO3vAhVQFlkFHdN2CRAQ9RcwFHoECCwQBA'
-            target='_blank'
+            target='_blank' rel='noreferrer'
           >
             <img src='/img/icon/map.svg' alt='Icon Map' />
           </a>
-          <a href='https://www.instagram.com/keiken_heladeria/' target='_blank'>
+          <a href='https://www.instagram.com/keiken_heladeria/' target='_blank' rel='noreferrer'>
             <img src='/img/icon/instagram.svg' alt='Instagram Icon' />
           </a>
         </div>

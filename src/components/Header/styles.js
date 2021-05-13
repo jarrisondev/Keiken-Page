@@ -1,141 +1,150 @@
 import styled from 'styled-components'
 
 export const HeaderStyled = styled.header`
-  background: #f7e9e0;
-  box-shadow: 0 3px 30px rgba(0, 0, 0, 0.668);
-  display: flex;
-  flex-direction: column;
+	background: #f7e9e0;
+	box-shadow: 0 3px 30px rgba(0, 0, 0, 0.668);
+	display: flex;
+	flex-direction: column;
 
-  height: 100vh;
-  justify-content: center;
-  position: relative;
-  width: 19vw;
+	height: 100vh;
+	justify-content: center;
+	position: relative;
+	width: 19vw;
 
-  z-index: 1;
+	z-index: 1;
 
-  picture {
-    align-items: center;
-    display: flex;
-    height: 15%;
-    justify-content: center;
+	picture {
+		align-items: center;
+		display: flex;
+		height: 15%;
+		justify-content: center;
 
-    margin-top: 1vw;
-    position: absolute;
-    top: 0;
-    width: 100%;
+		margin-top: 1vw;
+		position: absolute;
+		top: 0;
+		width: 100%;
 
-    img {
-      width: 80%;
-    }
-  }
+		img {
+			width: 80%;
+		}
+	}
 
-  div {
-    margin-left: 1.7vw;
-  }
+	div {
+		margin-left: 1.7vw;
+	}
 
-  a {
-    background: #64c4d6;
-    bottom: 1.3vw;
-    color: #38606e;
-    left: 2.2vw;
+	a {
+		background: #64c4d6;
+		bottom: 1.3vw;
+		color: #38606e;
+		display: flex;
 
-    padding: 0.7vw 0.7vw;
-    position: absolute;
-    right: 2.2vw;
-    text-decoration: none;
+		justify-content: space-between;
+		left: 2.2vw;
+		padding: 0.7vw 0.7vw;
+		position: absolute;
 
-    text-align: center;
-    width: 13vw;
+		right: 2.2vw;
+		text-decoration: none;
+		text-align: center;
+		width: 13vw;
 
-    span {
-      font-size: 1.7vw;
-      font-weight: 600;
-      position: relative;
+		span {
+			align-items: center;
+			display: flex;
+			font-size: 1.6vw;
+			font-weight: 600;
 
-      &::before {
-        background-color: #38606e;
-        bottom: 0;
-        content: '';
-        height: 0.2vw;
+			position: relative;
 
-        position: absolute;
-        transition: all 0.6s;
-        width: 100%;
-      }
-    }
+			&::before {
+				background-color: #38606e;
+				bottom: 0;
+				content: '';
+				height: 0.2vw;
 
-    &:hover {
-      background: #509aa7;
-      color: #f7e9e0;
+				position: absolute;
+				transition: all 0.6s;
+				width: 100%;
+			}
+		}
 
-      span {
-        &::before {
-          background: #f7e9e0;
-        }
-      }
-    }
-  }
+		&:hover {
+			background: #509aa7;
+			color: #f7e9e0;
 
-  @media (max-width: 650px) {
-    height: auto;
-    width: 100%;
+			span {
+				&::before {
+					background: #f7e9e0;
+				}
+			}
+		}
 
-    div {
-      margin-left: 3vw;
-    }
+		svg {
+			width: 15%;
+		}
+	}
 
-    a {
-      left: 4.4vw;
-      right: 4.4vw;
-      width: 30vw;
+	@media (max-width: 650px) {
+		height: auto;
+		width: 100%;
 
-      span {
-        font-size: 2.5vw;
-      }
-    }
-  }
-  @media (max-width: 450px) {
-    align-items: center;
-    flex-direction: row;
-    grid-row: 1;
-    height: 50px;
+		div {
+			margin-left: 3vw;
+		}
 
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    width: 100%;
+		a {
+			left: 4.4vw;
+			right: 4.4vw;
+			width: 30vw;
 
-    picture {
-      margin: 0;
-      min-height: 8vh;
-      position: static;
-      width: 30%;
+			span {
+				font-size: 2.5vw;
+			}
+		}
+	}
+	@media (max-width: 450px) {
+		align-items: center;
+		flex-direction: row;
+		grid-row: 1;
+		height: 50px;
 
-      img {
-        width: 75%;
-      }
-    }
+		justify-content: space-between;
+		position: sticky;
+		top: 0;
+		width: 100%;
 
-    div {
-      align-items: center;
-      display: flex;
-      justify-content: space-between;
-      margin: 0;
+		picture {
+			margin: 0;
+			min-height: 8vh;
+			position: static;
+			width: 30%;
 
-      width: 30%;
-    }
+			img {
+				width: 75%;
+			}
+		}
 
-    a {
-      height: 40%;
-      margin-right: 3%;
-      padding: 0 1% 1% 1%;
-      position: static;
+		div {
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+			margin: 0;
 
-      width: 20%;
+			width: 30%;
+		}
 
-      span {
-        font-size: 1.9vw;
-      }
-    }
-  }
+		a {
+			height: 40%;
+			margin-right: 3%;
+			padding: 0 1% 1% 1%;
+			position: static;
+
+			width: 20%;
+
+			span {
+				font-size: 1.9vw;
+			}
+		}
+	}
 `

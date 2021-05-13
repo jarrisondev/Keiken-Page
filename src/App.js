@@ -8,7 +8,7 @@ import { Aside } from './components/Aside/Aside'
 import { GlobalContext } from './context/GlobalContext'
 import { CARTAS_URI } from './data/cartas.json'
 
-function App() {
+function App () {
   const [data, setData] = useState(CARTAS_URI)
   const [loadingToken, setLoadingToken] = useState(true)
   const sliderContainer = useRef(null)

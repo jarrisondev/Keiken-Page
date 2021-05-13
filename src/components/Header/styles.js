@@ -99,7 +99,7 @@ export const HeaderStyled = styled.header`
 			width: 30vw;
 
 			span {
-				font-size: 2.5vw;
+				font-size: 3.5vw;
 			}
 		}
 	}
@@ -135,15 +135,20 @@ export const HeaderStyled = styled.header`
 		}
 
 		a {
+			align-items: center;
 			height: 40%;
 			margin-right: 3%;
-			padding: 0 1% 1% 1%;
-			position: static;
+			padding-right: 1%;
 
+			position: static;
 			width: 20%;
 
 			span {
-				font-size: 1.9vw;
+				font-size: 2.2vw;
+			}
+
+			svg {
+				width: 17%;
 			}
 		}
 	}

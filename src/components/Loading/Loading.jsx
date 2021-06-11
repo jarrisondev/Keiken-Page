@@ -1,5 +1,14 @@
+import { useEffect, useState } from 'react'
 import { LoadingStyled } from './styles'
-export const Loading = ({ loadingToken }) => {
+export const Loading = () => {
+	const [loadingToken, setLoadingToken] = useState(true)
+
+	useEffect(() => {
+		setInterval(() => {
+			setLoadingToken(false)
+		}, 4000)
+	}, [])
+
 	return (
 		<LoadingStyled lt={loadingToken}>
 			<img src='/img/logo.jpg' alt='Logo de bienvenida' />

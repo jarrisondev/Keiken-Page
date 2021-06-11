@@ -1,13 +1,9 @@
-import { useState, useContext } from 'react'
+import { useState } from 'react'
 import { Button } from '../Globals/Button/Button'
 import { HeaderStyled } from './styles'
-import { GlobalContext } from '../../context/GlobalContext'
-import { CARTAS_URI } from '../../data/cartas.json'
-import { GALLERY_URL } from '../../data/gallery.json'
 
-export const Header = () => {
+export const Header = ({ data, setData, slider1, slider2 }) => {
 	const [optionToken, setOptionToken] = useState(true)
-	const { setData, sliderContainer } = useContext(GlobalContext)
 
 	let button1 = false
 	let button2 = true
@@ -22,7 +18,8 @@ export const Header = () => {
 	}
 	// set the optionToken
 	const HandleButtons = (e) => {
-		const img = sliderContainer.current.children[0]
+		const slider = data[0] ? slider1.current : slider2.current
+		const img = slider.children[0]
 
 		// transition image function
 		img.style.transition = 'all .1s'
@@ -34,15 +31,13 @@ export const Header = () => {
 		}
 		img.addEventListener('transitionend', transition)
 
-		setTimeout(() => {
-			if (e.target.firstChild.textContent === 'GALERÍA') {
-				setData(GALLERY_URL)
-				setOptionToken(false)
-			} else {
-				setData(CARTAS_URI)
-				setOptionToken(true)
-			}
-		}, 50)
+		if (e.target.firstChild.textContent === 'GALERÍA') {
+			setData([false, data[1], data[2]])
+			setOptionToken(false)
+		} else {
+			setData([true, data[1], data[2]])
+			setOptionToken(true)
+		}
 	}
 
 	return (

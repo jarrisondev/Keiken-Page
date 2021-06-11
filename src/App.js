@@ -1,34 +1,31 @@
 import './styles/normalize.css'
 import './styles/globals.css'
-import { useEffect, useState, useRef } from 'react'
+import { useState, useRef } from 'react'
 import { Loading } from './components/Loading/Loading.jsx'
 import { Header } from './components/Header/Header'
 import { Card } from './components/Card/Card'
 import { Aside } from './components/Aside/Aside'
-import { GlobalContext } from './context/GlobalContext'
 import { CARTAS_URI } from './data/cartas.json'
+import { GALLERY_URL } from './data/gallery.json'
 
 function App() {
-	const [data, setData] = useState(CARTAS_URI)
-	const [loadingToken, setLoadingToken] = useState(true)
-	const sliderContainer = useRef(null)
-
-	useEffect(() => {
-		setInterval(() => {
-			setLoadingToken(false)
-		}, 4000)
-	}, [])
+	const [data, setData] = useState([true, CARTAS_URI, GALLERY_URL])
+	const slider1 = useRef(null)
+	const slider2 = useRef(null)
 
 	return (
 		<>
-			<GlobalContext.Provider value={{ data, setData, sliderContainer }}>
-				<Loading loadingToken={loadingToken} />
-				<div className='container'>
-					<Header />
-					<Card />
-					<Aside />
-				</div>
-			</GlobalContext.Provider>
+			<Loading />
+			<div className='container'>
+				<Header
+					data={data}
+					setData={setData}
+					slider1={slider1}
+					slider2={slider2}
+				/>
+				<Card data={data} slider1={slider1} slider2={slider2} />
+				<Aside />
+			</div>
 		</>
 	)
 }

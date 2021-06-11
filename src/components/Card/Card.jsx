@@ -71,12 +71,7 @@ export const Card = ({ data, slider1, slider2 }) => {
 				<span ref={slider2}>
 					{data[2].map((e) => {
 						return (
-							<img
-								key={e.id}
-								src={`/img${e.url}`}
-								loading='lazy'
-								alt={`Imagen ${e.id}`}
-							/>
+							<img key={e.id} src={`/img${e.url}`} alt={`Imagen ${e.id}`} />
 						)
 					})}
 				</span>

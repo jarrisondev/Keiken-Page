@@ -2,27 +2,23 @@ import styled from 'styled-components'
 
 export const AsideStyled = styled.aside`
   background-color: #38606e;
-  box-shadow: 0 -2px 30px rgba(0, 0, 0, 0.668);
   color: #f7e9e0;
   display: flex;
 
   flex-direction: column;
   justify-content: center;
-  padding: 3vw 2vw 2vw 2vw;
+  padding: 0.8rem;
   position: relative;
 
   text-transform: uppercase;
-  width: 40vw;
 
   p {
-    font-size: 1.4vw;
+    font-size: 0.75rem;
     font-weight: 100;
+    text-align: justify;
   }
 
   .aside-section1 {
-    position: absolute;
-    top: 4vw;
-
     span {
       color: #64c4d6;
       font-weight: 700;
@@ -35,24 +31,23 @@ export const AsideStyled = styled.aside`
   }
 
   .aside-section2 {
-    margin-top: 9vw;
+    font-size: 0.8rem;
 
     h3 {
-      font-size: 1.5vw;
+      font-size: inherit;
     }
 
     ul {
       li {
         color: #64c4d6;
-        font-size: 2vw;
+        font-size: inherit;
         font-weight: 100;
         list-style-position: inside;
 
-        margin-top: 0.8vw;
+        margin-top: 0.2rem;
 
         span {
           color: #f7e9e0;
-          font-size: 1.4vw;
           font-weight: 700;
           margin: -0.4vw 0 0 -1vw;
         }
@@ -60,6 +55,7 @@ export const AsideStyled = styled.aside`
         p {
           color: #f7e9e0;
           display: inline;
+          font-size: inherit;
         }
 
         &::before {
@@ -71,20 +67,18 @@ export const AsideStyled = styled.aside`
   }
 
   .aside-section3 {
-    margin-top: 2vw;
-
     p {
-      margin-top: 0.5vw;
+      text-align: left;
 
       svg {
-        height: 13px;
         fill: none;
-        margin-left: 0.5vw;
-        width: 17px;
+        height: 0.8rem;
+        margin-left: 0.3rem;
+        width: 1rem;
 
         path {
           stroke: #04dc00;
-          stroke-width: 1.5;
+          stroke-width: 0.1rem;
         }
       }
     }
@@ -92,20 +86,19 @@ export const AsideStyled = styled.aside`
 
   footer {
     align-items: center;
-    bottom: 1vw;
-    position: absolute;
     display: flex;
-
     justify-content: space-between;
-    right: 2vw;
-    width: 80%;
+    margin-top: 0.7rem;
+
+    width: 100%;
 
     p {
-      font-size: 1.1vw;
+      font-size: 0.65rem;
       font-weight: 400;
+
       a {
-        text-decoration: none;
         color: #f7e9e0;
+        text-decoration: none;
       }
     }
 
@@ -115,9 +108,9 @@ export const AsideStyled = styled.aside`
 
       a {
         img {
-          width: 1.5vw;
-          transition: 0.3s;
           transform: scale(0.9);
+          transition: 0.3s;
+          width: 1rem;
 
           &:hover {
             transform: scale(1.1);
@@ -127,162 +120,6 @@ export const AsideStyled = styled.aside`
 
       a:nth-of-type(1) {
         margin-right: 1.5vw;
-        img {
-          width: 1.6vw;
-        }
-      }
-    }
-  }
-
-  @media (max-width: 950px) {
-    width: 35vw;
-  }
-
-  @media (max-width: 750px) {
-    width: 30vw;
-
-    footer {
-      align-items: center;
-      width: 75%;
-
-      div {
-        a:nth-of-type(1) {
-          margin-bottom: 0.2vw;
-        }
-      }
-    }
-  }
-
-  @media (max-width: 650px) {
-    display: grid;
-    grid-column: 1 / 3;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 40% 40% 20%;
-
-    width: auto;
-
-    p {
-      font-size: 1.8vw;
-    }
-
-    .aside-section1 {
-      margin-left: 2vw;
-    }
-
-    .aside-section2 {
-      margin-top: 2vw;
-      grid-row: 2;
-      margin: auto;
-
-      h3 {
-        font-size: 1.9vw;
-      }
-      ul {
-        li {
-          font-size: 2.2vw;
-
-          span {
-            font-size: 1.8vw;
-          }
-        }
-      }
-    }
-
-    .aside-section3 {
-      grid-column: 2;
-      grid-row: 2;
-      margin: auto;
-    }
-
-    footer {
-      bottom: 0;
-      grid-column: 1 / 3;
-      right: 0;
-      width: 100%;
-
-      p {
-        font-size: 1.8vw;
-      }
-
-      div {
-        a {
-          img {
-            width: 2.5vw;
-          }
-        }
-
-        a:nth-of-type(1) {
-          margin-right: 2vw;
-        }
-      }
-    }
-  }
-
-  @media (max-width: 450px) {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 38% 20% 33% 10%;
-
-    p {
-      font-size: 3.5vw;
-    }
-
-    .aside-section1 {
-      margin: -1% 0 0 0;
-      position: static;
-      text-align: center;
-    }
-
-    .aside-section2 {
-      margin-top: 6vw;
-      grid-row: 2;
-      width: 100%;
-
-      h3 {
-        font-size: 3.5vw;
-      }
-      ul {
-        li {
-          font-size: 3.5vw;
-
-          span {
-            font-size: 3.5vw;
-          }
-        }
-      }
-    }
-
-    .aside-section3 {
-      grid-row: 3;
-      grid-column: 1;
-      margin-top: 7vw;
-      width: 100%;
-    }
-
-    footer {
-      grid-row: 4;
-      padding: 0;
-      position: static;
-      width: 100%;
-
-      p {
-        font-size: 3.5vw;
-      }
-
-      div {
-        margin-right: 2vw;
-        a {
-          img {
-            width: 4.4vw;
-          }
-        }
-
-        a:nth-of-type(1) {
-          margin-right: 2.8vw;
-          img {
-            width: 5vw;
-          }
-        }
       }
     }
   }

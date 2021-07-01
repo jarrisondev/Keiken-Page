@@ -1,82 +1,65 @@
 import styled from 'styled-components'
 
-export const ButtonStyled = styled.p`
-	color: #38606e;
-	cursor: pointer;
-	font-size: 1.7vw;
-	font-weight: 300;
+export const ButtonStyled = styled.button`
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+  color: #38606e;
 
-	position: relative;
-	width: 8.7vw;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+  position: relative;
 
-	svg {
-		margin-top: 0.1vw;
-		position: absolute;
-		right: 0;
-		transform: rotate(0.088turn);
+  p {
+    font-size: 0.7rem;
+    font-weight: 300;
+    margin-right: 0.3rem;
+    width: max-content;
+  }
 
-		transition: all 0.7s;
-		width: 1.3vw;
+  svg {
+    margin-bottom: 0.12rem;
+    transform: rotate(0.088turn);
+    transition: all 0.7s;
+    width: 0.58rem;
 
-		path {
-			stroke: #38606e;
-			stroke-opacity: 1;
-			stroke-width: 0.1vw;
-		}
-	}
+    path {
+      stroke: #38606e;
+      stroke-opacity: 1;
+      stroke-width: 0.1rem;
+    }
+  }
 
-	&:hover {
-		color: #64c4d6;
+  &:hover {
+    color: #64c4d6;
 
-		svg {
-			margin-top: 0.3vw;
-			transform: rotate(1.25turn);
+    svg {
+      margin-top: 0.3vw;
+      transform: rotate(1.25turn);
 
-			path {
-				stroke: #64c4d6;
-			}
-		}
-	}
+      path {
+        stroke: #64c4d6;
+        fill: #64c4d6;
+      }
+    }
+  }
 
-	&::before {
-		background-color: #64c4d6;
-		bottom: 0;
-		content: '';
-		height: 0.2vw;
+  &::before {
+    background-color: #64c4d6;
+    bottom: 0;
+    content: '';
+    height: 0.03rem;
 
-		margin: 0.5vw 0 0 0.3vw;
-		position: absolute;
-		transform: scaleX(0);
-		transition: all 0.5s;
+    margin: 0.1rem 0 0 0.1rem;
+    position: absolute;
+    transform: scaleX(0);
+    transition: all 0.5s;
 
-		width: 71%;
-	}
+    width: 71%;
+  }
 
-	&:hover::before {
-		transform: scaleX(1);
-	}
-	@media (max-width: 650px) {
-		font-size: 4vw;
-		width: 20vw;
-
-		svg {
-			width: 3vw;
-		}
-	}
-
-	@media (max-width: 450px) {
-		font-size: 2.6vw;
-		height: 2vh;
-		width: 14vw;
-
-		svg {
-			width: 2vw;
-		}
-
-		&:hover {
-			svg {
-				transform: rotate(1.5turn);
-			}
-		}
-	}
+  &:hover::before {
+    transform: scaleX(1);
+  }
 `

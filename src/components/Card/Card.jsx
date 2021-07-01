@@ -49,12 +49,12 @@ export const Card = ({ data, slider1, slider2 }) => {
       if (window.screen.width > 450) {
         setScreenHeight('85vh')
       } else {
-        setScreenHeight('70vh')
+        setScreenHeight('32rem')
       }
 
       setTimeout(() => {
         arrowsRef.current.style.opacity = '0'
-      }, 6000)
+      }, 6500)
     }
   }, [])
 

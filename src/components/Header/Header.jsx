@@ -47,14 +47,14 @@ export const Header = ({ data, setData, slider1, slider2 }) => {
       </picture>
       <div>
         <Button activeClass={button1} event={HandleButtons}>
-          GALERÍA
+          <p>GALERÍA</p>
           <svg viewBox='0 0 72.72 72.719'>
             <path d='M72.72,65.686H0L36.36,7.034L72.72,65.686z M5.388,62.686h61.943L36.36,12.727L5.388,62.686z' />
           </svg>
         </Button>
         <br />
         <Button activeClass={button2} event={HandleButtons}>
-          CARTAS
+          <p>CARTAS</p>
           <svg viewBox='0 0 72.72 72.719'>
             <g>
               <path d='M72.72,65.686H0L36.36,7.034L72.72,65.686z M5.388,62.686h61.943L36.36,12.727L5.388,62.686z' />

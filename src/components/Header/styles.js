@@ -1,155 +1,72 @@
 import styled from 'styled-components'
 
 export const HeaderStyled = styled.header`
-	background: #f7e9e0;
-	box-shadow: 0 3px 30px rgba(0, 0, 0, 0.668);
-	display: flex;
-	flex-direction: column;
+  align-items: center;
+  background-color: #f7e9e0;
+  display: flex;
+  height: 3rem;
 
-	height: 100vh;
-	justify-content: center;
-	position: relative;
-	width: 19vw;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  width: 100%;
 
-	z-index: 1;
+  z-index: 2;
 
-	picture {
-		align-items: center;
-		display: flex;
-		height: 15%;
-		justify-content: center;
+  picture {
+    margin: 0;
+    min-height: inherit;
+    position: static;
+    text-align: center;
 
-		margin-top: 1vw;
-		position: absolute;
-		top: 0;
-		width: 100%;
+    width: 6rem;
 
-		img {
-			width: 80%;
-		}
-	}
+    img {
+      width: 80%;
+    }
+  }
 
-	div {
-		margin-left: 1.7vw;
-	}
+  div {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
 
-	a {
-		background: #64c4d6;
-		bottom: 1.3vw;
-		color: #38606e;
-		display: flex;
+    margin-right: 0.5rem;
+    width: 7.5rem;
+  }
 
-		justify-content: space-between;
-		left: 2.2vw;
-		padding: 0.7vw 0.7vw;
-		position: absolute;
+  a {
+    align-items: center;
+    background: #64c4d6;
+    color: #38606e;
+    display: flex;
 
-		right: 2.2vw;
-		text-decoration: none;
-		text-align: center;
-		width: 13vw;
+    height: 1.5rem;
+    justify-content: space-between;
+    margin-right: 0.5rem;
+    padding: 0 0.3rem;
 
-		span {
-			align-items: center;
-			display: flex;
-			font-size: 1.6vw;
-			font-weight: 600;
+    padding-right: 1%;
+    width: 4.5rem;
 
-			position: relative;
+    span {
+      font-size: 0.5rem;
+    }
 
-			&::before {
-				background-color: #38606e;
-				bottom: 0;
-				content: '';
-				height: 0.2vw;
+    svg {
+      width: 0.8rem;
+    }
 
-				position: absolute;
-				transition: all 0.6s;
-				width: 100%;
-			}
-		}
+    &:hover {
+      background: #509aa7;
+      color: #f7e9e0;
 
-		&:hover {
-			background: #509aa7;
-			color: #f7e9e0;
-
-			span {
-				&::before {
-					background: #f7e9e0;
-				}
-			}
-		}
-
-		svg {
-			width: 15%;
-		}
-	}
-
-	@media (max-width: 650px) {
-		height: auto;
-		width: 100%;
-
-		div {
-			margin-left: 3vw;
-		}
-
-		a {
-			left: 4.4vw;
-			right: 4.4vw;
-			width: 30vw;
-
-			span {
-				font-size: 3.5vw;
-			}
-		}
-	}
-	@media (max-width: 450px) {
-		align-items: center;
-		flex-direction: row;
-		grid-row: 1;
-		height: 50px;
-
-		justify-content: space-between;
-		position: sticky;
-		top: 0;
-		width: 100%;
-
-		picture {
-			margin: 0;
-			min-height: 8vh;
-			position: static;
-			width: 30%;
-
-			img {
-				width: 75%;
-			}
-		}
-
-		div {
-			align-items: center;
-			display: flex;
-			justify-content: space-between;
-			margin: 0;
-
-			width: 30%;
-		}
-
-		a {
-			align-items: center;
-			height: 40%;
-			margin-right: 3%;
-			padding-right: 1%;
-
-			position: static;
-			width: 20%;
-
-			span {
-				font-size: 2.2vw;
-			}
-
-			svg {
-				width: 17%;
-			}
-		}
-	}
+      span {
+        &::before {
+          background: #f7e9e0;
+        }
+      }
+    }
+  }
 `

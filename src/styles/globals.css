@@ -18,13 +18,13 @@ html {
 
 @media (min-width: 1500px) {
   html {
-    font-size: 1vw;
+    font-size: 1.1vw;
   }
 
   .container {
     max-width: 80rem;
     min-width: 55rem;
-    height: 55rem;
+    height: 50rem;
     border: 1px solid red;
     width: 100%;
   }
@@ -33,6 +33,7 @@ html {
 .container {
   position: relative;
   width: 100%;
+  overflow-y: hidden;
 }
 
 .activeClass {

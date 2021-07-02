@@ -19,9 +19,11 @@ export const CardStyled = styled.picture`
       position: absolute;
       top: 0;
 
+      width: 100%;
+
       img {
-        width: 100%;
         height: 32rem;
+        width: 100%;
       }
     }
 
@@ -35,22 +37,21 @@ export const CardStyled = styled.picture`
   }
 
   .arrows-container {
-    top: 0;
     display: flex;
     position: absolute;
+    height: inherit;
+    top: 0;
 
     user-select: none;
     width: 100vw;
-    height: inherit;
-    z-index: 2;
+    z-index: 1;
 
     span {
       background-color: #64c4d6cc;
-      border: 0.1rem solid #64c4d6;
       cursor: pointer;
       display: flex;
-
       height: inherit;
+
       justify-content: center;
       width: 100%;
 

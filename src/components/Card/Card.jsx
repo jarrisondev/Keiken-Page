@@ -2,7 +2,7 @@ import { CardStyled } from './styles'
 import { useEffect, useRef, useState } from 'react'
 
 export const Card = ({ data, slider1, slider2 }) => {
-  const [screenHeight, setScreenHeight] = useState('100vh')
+  const [screenHeight, setScreenHeight] = useState('32rem')
   const arrowsRef = useRef(null)
   let backArrowDelay = true
 
@@ -45,17 +45,9 @@ export const Card = ({ data, slider1, slider2 }) => {
 
   // check width of screen
   useEffect(() => {
-    if (window.screen.width <= 650) {
-      if (window.screen.width > 450) {
-        setScreenHeight('85vh')
-      } else {
-        setScreenHeight('32rem')
-      }
-
-      setTimeout(() => {
-        arrowsRef.current.style.opacity = '0'
-      }, 6500)
-    }
+    setTimeout(() => {
+      arrowsRef.current.style.opacity = '0'
+    }, 6500)
   }, [])
 
   return (

@@ -100,6 +100,10 @@ export const AsideStyled = styled.aside`
         color: #f7e9e0;
         text-decoration: none;
       }
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
 
     div {
@@ -109,11 +113,10 @@ export const AsideStyled = styled.aside`
       a {
         img {
           transform: scale(0.9);
-          transition: 0.3s;
           width: 1rem;
 
           &:hover {
-            transform: scale(1.1);
+            opacity: 0.8;
           }
         }
       }
@@ -127,5 +130,35 @@ export const AsideStyled = styled.aside`
   @media (min-width: 550px) {
     grid-column: 1 / -1;
     grid-row: 2;
+  }
+
+  @media (min-width: 1024px) {
+    grid-column: 3;
+    grid-row: 1;
+    justify-content: space-between;
+    padding: 1rem;
+
+    p {
+      font-size: 0.8rem;
+      line-height: 1.05rem;
+      text-align: justify;
+    }
+
+    .aside-section1 {
+      margin-top: 2rem;
+    }
+
+    .aside-section2 {
+      font-size: 0.92rem;
+    }
+
+    footer {
+      margin: 3rem 0 0 2.8rem;
+      width: auto;
+
+      p {
+        font-size: 0.69rem;
+      }
+    }
   }
 `

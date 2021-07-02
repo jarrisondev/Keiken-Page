@@ -15,8 +15,8 @@ function App() {
 
   return (
     <>
-      <Loading />
       <div className='container'>
+        <Loading />
         <Header
           data={data}
           setData={setData}

@@ -92,10 +92,38 @@ export const HeaderStyled = styled.header`
 
       span {
         font-size: 0.8rem;
+        position: relative;
+        text-decoration: none;
+
+        &::before {
+          background-color: #38606e;
+          bottom: 0;
+          content: '';
+          height: 0.1rem;
+
+          position: absolute;
+          transition: all 0.6s;
+          width: 100%;
+        }
       }
 
       svg {
         width: 1rem;
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    a {
+      border-radius: 0 0 0 1rem;
+      height: 2rem;
+
+      span {
+        font-size: 0.92rem;
+      }
+
+      svg {
+        width: 1.2rem;
       }
     }
   }

@@ -3,7 +3,7 @@
 * {
   padding: 0;
   margin: 0;
-  transition: 300ms ease-in-out all;
+  transition: 100ms ease-in-out all;
 }
 
 body {
@@ -28,6 +28,30 @@ html {
     grid-template-rows: 32rem 1fr;
 
     width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 1.4vw;
+  }
+
+  body {
+    align-items: center;
+    background-color: #ffddca;
+    display: flex;
+    height: 100vh;
+
+    justify-content: center;
+  }
+
+  .container {
+    border-radius: 1rem;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 1fr;
+    max-height: 32rem;
+
+    max-width: 60rem;
   }
 }
 

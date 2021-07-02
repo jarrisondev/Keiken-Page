@@ -1,8 +1,7 @@
 import { CardStyled } from './styles'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef } from 'react'
 
 export const Card = ({ data, slider1, slider2 }) => {
-  const [screenHeight, setScreenHeight] = useState('32rem')
   const arrowsRef = useRef(null)
   let backArrowDelay = true
 
@@ -14,10 +13,10 @@ export const Card = ({ data, slider1, slider2 }) => {
 
     slider.insertBefore(lastImg, slider.children[0])
     slider.style.transition = 'none'
-    slider.style.transform = `translateY(-${screenHeight})`
+    slider.style.transform = `translateY(-32rem)`
 
     setTimeout(() => {
-      slider.style.transition = '300ms ease-out all'
+      slider.style.transition = '400ms ease-out all'
       slider.style.transform = 'translateY(0)'
 
       setTimeout(() => {
@@ -30,8 +29,8 @@ export const Card = ({ data, slider1, slider2 }) => {
     const slider = data[0] ? slider1.current : slider2.current
     const firstImg = slider.children[0]
 
-    slider.style.transition = 'all .3s'
-    slider.style.transform = `translateY(-${screenHeight})`
+    slider.style.transition = '400ms ease-out all'
+    slider.style.transform = `translateY(-32rem)`
 
     const transition = () => {
       slider.style.transition = 'none'
@@ -43,7 +42,6 @@ export const Card = ({ data, slider1, slider2 }) => {
     slider.addEventListener('transitionend', transition)
   }
 
-  // check width of screen
   useEffect(() => {
     setTimeout(() => {
       arrowsRef.current.style.opacity = '0'

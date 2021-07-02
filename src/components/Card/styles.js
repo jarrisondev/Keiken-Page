@@ -62,12 +62,43 @@ export const CardStyled = styled.picture`
           fill: #f7e9e0;
         }
       }
+
+      &:hover {
+        background-color: #64c4d6;
+
+        svg {
+          transform: rotateY(0.5turn);
+          transition: 400ms;
+
+          path {
+            fill: #f7e9e0;
+          }
+        }
+      }
     }
   }
 
   @media (min-width: 550px) {
     .arrows-container {
       width: 100%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .arrows-container {
+      bottom: 0;
+      height: 2.8rem;
+      opacity: 1 !important;
+      right: -3rem;
+
+      top: initial;
+      width: 6rem;
+
+      span {
+        svg {
+          width: 1rem;
+        }
+      }
     }
   }
 `

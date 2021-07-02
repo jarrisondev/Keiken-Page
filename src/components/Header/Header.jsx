@@ -22,7 +22,7 @@ export const Header = ({ data, setData, slider1, slider2 }) => {
     const img = slider.children[0]
 
     // transition image function
-    img.style.transition = 'all .1s'
+    img.style.transition = 'all 500ms'
     img.style.transform = 'scale(0)'
 
     const transition = () => {

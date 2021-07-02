@@ -123,4 +123,9 @@ export const AsideStyled = styled.aside`
       }
     }
   }
+
+  @media (min-width: 550px) {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
 `

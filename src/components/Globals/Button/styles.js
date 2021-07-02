@@ -62,4 +62,10 @@ export const ButtonStyled = styled.button`
   &:hover::before {
     transform: scaleX(1);
   }
+
+  @media (min-width: 550px) {
+    p {
+      font-size: 1rem;
+    }
+  }
 `

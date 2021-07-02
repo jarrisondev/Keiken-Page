@@ -16,36 +16,37 @@ html {
   font-size: 4.5vw;
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 550px) {
   html {
-    font-size: 1.1vw;
+    font-size: 3vw;
   }
 
   .container {
-    max-width: 80rem;
-    min-width: 55rem;
-    height: 50rem;
-    border: 1px solid red;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 32rem 1fr;
+
     width: 100%;
   }
 }
 
 .container {
   position: relative;
-  width: 100%;
   overflow-y: hidden;
+  width: 100%;
 }
 
 .activeClass {
   color: #64c4d6 !important;
 }
 .activeClass svg {
-  transform: rotate(1.25turn) !important;
   margin-bottom: 0 !important;
+  transform: rotate(1.25turn) !important;
 }
 .activeClass svg path {
-  stroke: #64c4d6 !important;
   fill: #64c4d6 !important;
+  stroke: #64c4d6 !important;
 }
 .activeClass::before {
   transform: scaleX(1) !important;

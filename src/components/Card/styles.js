@@ -64,4 +64,10 @@ export const CardStyled = styled.picture`
       }
     }
   }
+
+  @media (min-width: 550px) {
+    .arrows-container {
+      width: 100%;
+    }
+  }
 `

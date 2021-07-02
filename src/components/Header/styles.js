@@ -69,4 +69,34 @@ export const HeaderStyled = styled.header`
       }
     }
   }
+
+  @media (min-width: 550px) {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    width: auto;
+
+    picture {
+      width: 100%;
+    }
+
+    div {
+      flex-direction: column;
+    }
+
+    a {
+      font-weight: 600;
+      height: 1.8rem;
+      justify-content: space-around;
+      width: 100%;
+
+      span {
+        font-size: 0.8rem;
+      }
+
+      svg {
+        width: 1rem;
+      }
+    }
+  }
 `

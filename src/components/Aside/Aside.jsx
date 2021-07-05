@@ -6,7 +6,7 @@ export const Aside = () => {
       <section className='aside-section1'>
         <p>
           "Hola!! te damos la bienvenidad a{' '}
-          <a href='https://www.instagram.com/keiken_heladeria/' target='_blank'>
+          <a href='https://www.instagram.com/keiken_medellin/' target='_blank'>
             @keiken_heladeria
           </a>
           , Esperamos que estés muy bien, somos una heladería que quiere brindar
@@ -68,7 +68,7 @@ export const Aside = () => {
             <img src='/img/icon/map.svg' alt='Icon Map' />
           </a>
           <a
-            href='https://www.instagram.com/keiken_heladeria/'
+            href='https://www.instagram.com/keiken_medellin/'
             target='_blank'
             rel='noreferrer'>
             <img src='/img/icon/instagram.svg' alt='Instagram Icon' />

@@ -5,7 +5,7 @@ export const Aside = () => {
     <AsideStyled>
       <section className='aside-section1'>
         <p>
-          "Hola!! te damos la bienvenidad a{' '}
+          "Hola!! te damos la bienvenida a
           <a href='https://www.instagram.com/keiken_medellin/' target='_blank'>
             @keiken_heladeria
           </a>
